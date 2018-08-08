@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>template</title>
+<style>
+    div{
+        height:300px;
+        width: 400px;
+    }
+    
+</style>
+    
+</head>
+<body>
+    <div id="color">
+
+    </div>
+    <!-- <button onclick="changeColor()">change color</button> -->
+     
+
+
+    
+
+
+    <script>
+        // function changeColor(){
+        //     document.style.backgroundColor="red"
+        // }
+
+    
+  b=0;
+  x=1;
+  
+  function changeColor(){
+   b+=x;
+   if(b>=256){
+     x=-1; 
+     b=256;
+   }
+   else if(b<=0){
+    x=1;
+    b=0;
+   }
+   document.getElementById("color").style.background = "rgb(0,0,"+ b +")";
+  }
+  
+  window.setInterval("changeColor()",1);
+  
+</script>
+        
+    
+   
+</body>
+</html>
