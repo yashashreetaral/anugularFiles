@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="yes"></p>
+    <input type="text" id="incr">
+<button type="button" class="btn-btn-primary" onclick="inc()">Increament By 5</button>
+<script>
+    function inc()
+    {
+        let a = document.getElementByID("incr").value
+        document.getElementById("incr").innerHTML=a
+        for(let i=0;i<100;i++)
+        {
+            a+=5
+            document.getElementById("yes").innerHTML=a
+            
+        }
+
+    }
+</script>
+
+</body>
+</html>
